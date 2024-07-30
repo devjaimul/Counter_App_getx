@@ -38,8 +38,11 @@ class ResultScreen extends StatelessWidget {
                   color: Colors.red,
                   size: 30,
                 ),
-
-          ElevatedButton(onPressed: (){Get.back();}, child: Text('back to Counter'))
+          ElevatedButton(
+              onPressed: () {
+                Get.back();
+              },
+              child: Text('back to Counter')),
         ],
       ),
     );

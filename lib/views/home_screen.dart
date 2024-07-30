@@ -69,24 +69,21 @@ class HomeScreen extends StatelessWidget {
                 onPressed: () {
                   controller.counter.value = 0;
 
-                  //getx use kore snackbar
-
-                //   Get.snackbar('Complete', 'You just Clear Everything',
-                //    //   backgroundColor: Colors.pink,
-                // //  colorText: Colors.blue,
-                //     snackPosition: SnackPosition.BOTTOM,
-                //     duration: const Duration(seconds: 2)
-                //   );
+                  // getx use kore snackbar
+                  //
+                  //   Get.snackbar('Complete', 'You just Clear Everything',
+                  //    //   backgroundColor: Colors.pink,
+                  // //  colorText: Colors.blue,
+                  //     snackPosition: SnackPosition.BOTTOM,
+                  //     duration: const Duration(seconds: 2)
+                  //   );
 
                   Get.defaultDialog(
                     title: 'Alert!',
-                    content: Text('Do you want to rest?'),
-                    confirm: Text('Yes'),
-                    cancel: Text('No'),
-
+                    content: const Text('Do you want to rest?'),
+                    confirm: const Text('Yes'),
+                    cancel: const Text('No'),
                   );
-
-
                 },
                 child: const Text('Reset')),
             ElevatedButton(
